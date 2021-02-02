@@ -30,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Real Estate Data Analytics</a>
+      <a class="navbar-brand" href="index.html">Real Estate Data Analytics</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -72,105 +72,69 @@
     </div>
     <!-- /.row -->
 
-    <!-- Content Row -->
+    <!-- Project Boxes -->
     <div class="row">
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title">Analysis of Economic Factors Affecting Real Estate</h2>
-            <p class="card-text">Identification and Hypothesis Testing of Economic Factors that May Affect the Real Estate Markets.</p>
+            <h2 class="card-title">Impact of COVID-19 on the Real Estate Markets in 2020</h2>
+            <p class="card-text">An analysis of real estate markets prior to 2020 and show how those markets were interrupted in 2020 by the COVID0-19 pandemic.</p>
           </div>
           <div class="card-footer">
-            <a href="economic-indicators-analysis.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
+            <a href="covid-impact-2020.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Predicting Real Estate Markets for Real Estate Investors</h2>
+            <p class="card-text">A Machine Learning Model of the Real Estate Markets and Predictions of Future Real Estate Markets based on several economic indicators.</p>
+          </div>
+          <div class="card-footer">
+            <a href="real-estate-market-predictions.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
           </div>
         </div>
       </div>
       <!-- /.col-md-4 -->
       <div class="col-md-4 mb-5">
         <!-- <div class="card h-100"> -->
-          <div class="card text-white bg-info mb-5">
-            <div class="card-body">
-              <h2 class="card-title">Real Estate Market Data Model</h2>
-              <p class="card-text">Development of the Real Estate Market Predictions Model.</p>
-            </div>
+        <div class="card text-white bg-info mb-5">
+          <div class="card-body">
+            <h2 class="card-title">New Homes Sales--a Leading Predictor of Existing Home Sales Real Estate Markets?</h2>
+            <p class="card-text">Analyzing whether New Home Sales are a Leading Predictor of Existing Home Sales in the US Real Estate Market.</p>
+          </div>
           <div class="card-footer">
             <a href="" class="btn btn-primary btn-sm">Current Presentation</a>
           </div>
         </div>
       </div>
       <!-- /.col-md-4 -->
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Real Estate Market Predictions</h2>
-            <p class="card-text">Predicting Changes to Real Estate Markets as Economic Indicators Change.</p>
-          </div>
-          <div class="card-footer">
-            <a href="real-estate-predictions.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-
     </div>
-    <!-- /.row -->
+    <!-- /.row Project Boxes -->
 
+    
     <div class="card">
       <div class="card-header"></div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p>We developed a machine learning model using the five economic indicators that we highlighted on the previous page, namely:<br>
-            <li>Unemployment Rate</li>
-            <li>Average Hourly Wages</li>
-            <li>Mortgage Intererst Rates</li>
-            <li>House Price Index</li>
-            <li>Gross Domestic Product (an indicator of the strength of the economy)</li>
-            <br><br>
-            We then tracked the "strength" of the real estate market over a time series for each month.
-            The strength of the market indicates whether the market is a <b>Buyer’s Market</b> (more than 5 months of housing inventory), a <b>Seller’s Market</b> (fewer than 3 months of housing inventory), or a <b>Balanced Market</b> (3-5 months of housing inventory).<br><br>
-            The supply of homes is also known as the absorption rate and is indicated using the Months of Supply of Housing Inventory.<br><br>
-          </p>
-          The data that we used to train and test our machine model is below.<br>
-          <!-- iframe src="../data/machinelearningdata-display.pdf" width="100%" height="500px"> -->
+          <p>This anaylsis explores whether New Home Sales are a predictor of the Existing Home Real Estate Market<br><br>
+          The chart below shows Homes Sold, New Listings, and Pending Sales for the past three years. The numbers displayed are "year-over-year" differences in those data points.</p>
         </blockquote>
       </div>
     </div>
 
-        <!-- Content Row -->
-        <div class="row">
-          <div class="col-md-12 mb-5">
-            <!-- Machine Learning Model  -->
-            <div id="machine-learning-model"></div>
-            <img src="../data/datarealestate.PNG" alt="Real Estate Analtyics Data">
-           </div>
-       </div>
-
     <!-- Content Row -->
-    <div class="row">
-   <div class="card">
-    <div class="card-header"></div>
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p>After we ran our model, we visualized the training and testing data.</p>
-        <div class="col-lg-7">
-          <img src="../data/residualplot.PNG" alt="Real Estate Analtyics-Train/Test Plot">
-        </div>
-
-      </blockquote>
+   <div class="row">
+    <div class="col-md-12 mb-5">
+      <!-- Real Estate Chart Historical  -->
+      <div id="real-estate-all-line-plot"></div>
+      <script src="../static/js/realestaterecords.js"></script>
+      <script src="../static/js/real-estate-plot-historical.js"></script>
+      <footer class="blockquote-footer">Data provided by Redfin, a national real estate brokerage.</footer>
+     </div>
     </div>
-  </div>
-
-
-   <div class="card">
-    <div class="card-header"></div>
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p>Our Model Score (R-squared) is:<br><br>
-        <h1>92%</h1></p>
-      </blockquote>
-    </div>
-  </div>
-
 
   </div>
   <!-- /.container -->
@@ -178,7 +142,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; 2021</p>
+      <p class="m-0 text-center text-white">Copyright &copy; 2021 Cheryl Sellers Johnson</p>
     </div>
     <!-- /.container -->
   </footer>

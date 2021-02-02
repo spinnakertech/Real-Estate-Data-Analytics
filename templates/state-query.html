@@ -30,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Real Estate Data Analytics</a>
+      <a class="navbar-brand" href="index.html">Real Estate Data Analytics</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -65,8 +65,8 @@
       </div>
       <!-- /.col-lg-8 -->
       <div class="col-lg-5">
-        <h1 class="font-weight-light">Real Estate Data Analytics</h1>
-        <p>Understanding Real Estate Markets through Data Analytics.</p>
+        <h1 class="font-weight-light">Real Estate Sales and COVID-19 Closures by State</h1>
+        <p>Select your state to view the impact of COVID-19 Stay-at-Home Orders on Real Estates Sales in Your State.</p>
       </div>
       <!-- /.col-md-4 -->
     </div>
@@ -77,11 +77,11 @@
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title">Analysis of Economic Factors Affecting Real Estate</h2>
-            <p class="card-text">Identification and Hypothesis Testing of Economic Factors that May Affect the Real Estate Markets.</p>
+            <h2 class="card-title">Historical Real Estate Sales Trends</h2>
+            <p class="card-text">An historical presentation of real estate markets over time.</p>
           </div>
           <div class="card-footer">
-            <a href="economic-indicators-analysis.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
+            <a href="historical-trends.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
           </div>
         </div>
       </div>
@@ -89,11 +89,11 @@
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title">Real Estate Market Data Model</h2>
-            <p class="card-text">Development of the Real Estate Market Predictions Model.</p>
+            <h2 class="card-title">Real Estate Markets in 2020</h2>
+            <p class="card-text">An analysis of the impact of stay-at-home orders on real estate markets.</p>
           </div>
           <div class="card-footer">
-            <a href="real-estate-data-model.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
+            <a href="real-estate-2020.html" class="btn btn-primary btn-sm">Presentation & Charts</a>
           </div>
         </div>
       </div>
@@ -101,12 +101,12 @@
       <div class="col-md-4 mb-5">
         <!-- <div class="card h-100"> -->
           <div class="card text-white bg-info mb-5">
-            <div class="card-body">
-              <h2 class="card-title">Real Estate Market Predictions</h2>
-              <p class="card-text">Predicting Changes to Real Estate Markets as Economic Indicators Change.</p>
-            </div>
+          <div class="card-body">
+            <h2 class="card-title">Visitor Query of Specific States</h2>
+            <p class="card-text">Query a specific state's stay-at-home orders through October 2020 to see how specific real estate markets were impacted by those orders.</p>
+          </div>
           <div class="card-footer">
-            <a href="" class="btn btn-primary btn-sm">Current Presentation</a>
+            <a href="state-query.html" class="btn btn-primary btn-sm">Check Your State</a>
           </div>
         </div>
       </div>
@@ -115,51 +115,31 @@
     </div>
     <!-- /.row -->
 
-    <div class="card">
-      <div class="card-header"></div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>We then ran some predictions on our Real Estate Markets model.</p>
-        </blockquote>
-      </div>
-    </div>
+    <!-- Content Row -->
+
+    <!-- <h2>Streaming Music By Country</h2>
+    <select id="selDataset" onchange="getData(this.value)">
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">Canada</option>
+    </select>
+
+    <div id="pie"></div>
+
+    <script src="../static/data.js"></script>
+    <script src="../static/plots.js"></script> -->
 
 
-    <div class="card">
-      <div class="card-header"></div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p><h2>Prediction 1:</h2></p>
-          <p>What would happen if all factors were consistent with the January 2020 data except that the economy crashed, e.g., GDP = 10,000?</p>
-          January 2020 Data:
-          <li>Mortgage Interest Rate: 3.51</li>
-          <li>Housing Price Index: 197.36</li>
-          <li>Unemployment Rate: 3.5</li>
-          <li>Average Hourly Rate: 28.43</li>
-          <li>Gross Domestic Product:	19,263.831</li>
-          In January 2020, the Months of Supply of Real Estate Inventory was 2.7 months, indicating a <b>Seller's Market</b>.<br><br>
-          We changed GDP to 10,000, and our model returned: <b>3 months</b>, the very beginning of a <b>Balanced Market</b>.<br>
-        </blockquote>
-      </div>
-    </div>
+    <div id="state-line-plot"></div>
 
-    <div class="card">
-      <div class="card-header"></div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p><h2>Prediction 2:</h2></p>
-          <p>What would happen if all factors were consistent with the January 2020 data except that the mortgage interest rates rose to 10%?</p>
-          January 2020 Data:
-          <li>Mortgage Interest Rate: 3.51</li>
-          <li>Housing Price Index: 197.36</li>
-          <li>Unemployment Rate: 3.5</li>
-          <li>Average Hourly Rate: 28.43</li>
-          <li>Gross Domestic Product:	19,263.831</li>
-          In January 2020, the Months of Supply of Real Estate Inventory was 2.7 months, indicating a <b>Seller's Market</b>.<br><br>
-          We changed mortgage interest rate to 10%, and our model returned: <b>5.5 months</b>, indicating a strong <b>Buyer's Market</b>.<br>
-        </blockquote>
-      </div>
-    </div>
+    <select id="selStateOption onchange="getData(this.value)">
+      <option value="option1">Maryland</option>
+      <option value="option2">Colorado</option>
+    </select>
+  
+    <script src="../static/js/realestaterecords.js"></script>
+    <script src="../static/js/covidrecords.js"></script>
+    <script src="../static/js/select-state.js"></script>
 
 
   </div>
@@ -168,7 +148,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; 2021</p>
+      <p class="m-0 text-center text-white">Copyright &copy; 2021 Cheryl Sellers Johnson</p>
     </div>
     <!-- /.container -->
   </footer>
